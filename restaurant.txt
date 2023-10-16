@@ -1,0 +1,49 @@
+Problem #3
+No need write actual code. Only the class definition is enough. 
+Write a class definition  for a restaurant. Write the private/public properties and functions.
+Instantiate the class for Anandha Bhavan.
+
+class Anandha Bhavan:
+ def orders:
+      order=input("input from the customer")
+      if item in (menu):
+         order.append(item)
+      else:
+        print("no such item in our menu")
+      return order
+
+ def getaddress(address):
+    adderss=input("enter the address")
+    return(address)
+
+ def claculatebill(order,sellingprice):
+     for i in oreders:
+       bill+=orders* sellingprice
+    return bill
+
+def calculateprofit(sellingprice,sold,expenses): # private
+    profit= sold*sellingprice
+
+
+  
+ private class:
+       recipies(list)
+       groceries(list)
+       no of workers(int)
+       no of dishes(list)
+       costprice(dictionary)
+       sellingprice(dictionary)
+       sold(list)
+       profitperday(list)
+       expenses(float)
+       profit=calculateprofit(sellingprice,costprice,sold)
+ public class:
+        menu(list)
+        bill(list)
+        sellingprice(list)
+        if customer oreders:
+         order=order(menu)
+        if customer wants delivery:
+        adderss=getaddress(address)
+        bill=claculatebill(sellingprice,order)
+        
