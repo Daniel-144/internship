@@ -13,8 +13,10 @@ passage=passage.lower()
 # used stip function to strip the passage with the word "the" ex: he is the hero :[he is,hero]
 print("the passage is:",passage)
 passage=passage.split("the")
-# if there is a the present as the first word then empty character will be appended in a string so we use remove to remove the empty chracter
-passage.remove("")
+# the fist split will contain the word with only one the so we pop the word in index 0 and last index because there will be only one the.
+passage.pop(0)
+passage.pop(len(passage)-1)
+print(passage)
 count=0
 # loop to iterate through the list
 for i in range(len(passage)):
@@ -24,7 +26,8 @@ for i in range(len(passage)):
         count+=1
 # output
 print("the answer is:",count)
-# the next day will not be taken into count because the word day has a "a" in it
+# the next day will not be taken into count because the string has only one 'the'
+# forest again will not be taken into count because again has "a" in it.
 
 """
 OP
