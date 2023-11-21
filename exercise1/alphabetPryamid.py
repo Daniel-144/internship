@@ -6,13 +6,26 @@ abacaba
 abacabadabacaba
 abacabadabacabaeabacabadabacaba
 """
-rang=int(input("enter the range of pyramid:"))
-alpha=97
-char=""
-for i in range(0,7):
-    print(char+chr(alpha)+char(alpha+i)+char)
-    print()
-    char=(char+chr(alpha+i)+char)
+# initializing start and end points
+start='a'
+end='g'
+temp=start
+# while loop to print the pattern
+while (ord(start) <= ord(end)):
+    print(temp)
+    start=chr(ord(start)+1)
+    temp=temp+start+temp
+
+
+"""
+OP:
+aba
+abacaba
+abacabadabacaba
+abacabadabacabaeabacabadabacaba
+abacabadabacabaeabacabadabacabafabacabadabacabaeabacabadabacaba
+abacabadabacabaeabacabadabacabafabacabadabacabaeabacabadabacabagabacabadabacabaeabacabadabacabafabacabadabacabaeabacabadabacaba
+"""
 
 
 

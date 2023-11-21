@@ -11,6 +11,7 @@ abcd is  not same as cdba
 hint - 
 there are many simple answers. you can try with slice function
 """
+# function to 
 def DeterminingTheString(firstCharIndex,similarString,string):
     result=False
     for i in range(len(firstCharIndex)):
