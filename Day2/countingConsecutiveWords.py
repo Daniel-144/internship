@@ -6,12 +6,17 @@ that are the same without any other specific word in between.
 """
 import re
 
-passage=input("enter tghe passage:")
+passage=input("enter the passage:")
+# removing the special characters
 passage=re.sub('[^a-zA-Z0-9]+'," ",passage)
+# spliting the sentence\ passage using split function.
 listOfWords=passage.split(" ")
 consecutiveWords=0
+# initializing a list to store the consecutive word.
 consecutiveWordsList=[]
+# loop to find the consecutive words.
 for i in range(len(listOfWords)-1):
+    # if the word 
     if listOfWords[i] == listOfWords[i+1]:
         print(f"consecutive word found!! {listOfWords[i]} and {listOfWords[i+1]}")
         consecutiveWords+=1
