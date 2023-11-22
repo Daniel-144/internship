@@ -4,7 +4,10 @@ Write a program that reads a passage or string and counts the occurrences of two
 that are the same without any other specific word in between.
  For example, count the occurrences of "apple apple" but not "apple orange apple."
 """
+import re
+
 passage=input("enter tghe passage:")
+passage=re.sub('[^a-zA-Z0-9]+'," ",passage)
 listOfWords=passage.split(" ")
 consecutiveWords=0
 consecutiveWordsList=[]
@@ -20,14 +23,20 @@ if len(consecutiveWordsList)>=1:
 
 """
 Op:
+enter tghe passage:apple apple orange apple orange apple orange orange
 consecutive word found!! apple and apple
 consecutive word found!! orange and orange
 No.of consecutive words found:2
 The words ['apple', 'orange'] are used consecutively.
 
 OP:
+enter tghe passage:apple,apple,orange,orange
 consecutive word found!! apple and apple
 consecutive word found!! orange and orange
 No.of consecutive words found:2
 The words ['apple', 'orange'] are used consecutively.
+
+OP:
+enter tghe passage:apple orange apple
+No.of consecutive words found:0
 """
