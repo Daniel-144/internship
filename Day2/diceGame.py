@@ -16,7 +16,7 @@ def calculate_points(point):
             # using random to generate a random number
             dice=(random.randint(0,6))
             # print to show the random number generated
-            print(f"the rolled value is {dice}")
+            print(f"the rolled value is:{dice}")
             # if the random number is 0 then game ends.
             if dice == 0:
                 return point
@@ -24,6 +24,7 @@ def calculate_points(point):
             # if the random number is even then 2 points are added.
             elif(dice % 2 == 0):
                 point+=2
+                print(f"points earned, current points:{point}")
             # if the number is odd and it is 1 or 3 then the player have to jump.
             elif(dice % 2 != 0):
                 if( dice == 1 or dice ==3):
@@ -40,12 +41,53 @@ print(f"Total points earned:{total_points}")
 
 """
 OP:
-the rolled value is 1
+the rolled value is 3
 You have to jump!!
+the rolled value is 6
+points earned, current points:2
+the rolled value is 6
+points earned, current points:4
+the rolled value is 3
+You have to jump!!
+the rolled value is 4
+points earned, current points:6
 the rolled value is 5
-the rolled value is 1
-You have to jump!!
+the rolled value is 4
+points earned, current points:11
 the rolled value is 0
 Game Over!!
-Total points earned:3
+Total points earned:11
+PS C:\Users\sugav\OneDrive\Desktop\sayur> & C:/Users/sugav/AppData/Local/Programs/Python/Python310/python.exe c:/Users/sugav/OneDrive/Desktop/sayur/internship/Day2/diceGame.py
+the rolled value is:3
+You have to jump!!
+the rolled value is:3
+You have to jump!!
+the rolled value is:3
+You have to jump!!
+the rolled value is:4
+points earned, current points:2
+the rolled value is:1
+You have to jump!!
+the rolled value is:5
+the rolled value is:5
+the rolled value is:3
+You have to jump!!
+the rolled value is:5
+the rolled value is:6
+points earned, current points:13
+the rolled value is:5
+the rolled value is:6
+points earned, current points:18
+the rolled value is:4
+points earned, current points:20
+the rolled value is:3
+You have to jump!!
+the rolled value is:6
+points earned, current points:22
+the rolled value is:3
+You have to jump!!
+the rolled value is:5
+the rolled value is:0
+Game Over!!
+Total points earned:25
 """
