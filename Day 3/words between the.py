@@ -12,14 +12,12 @@ passage=""
 try:
     # initialize a empty list to store the words.
     wortdsWithoutAinBetween=[]
-    with open('C:\\Users\\sugav\\OneDrive\\Desktop\\sayur\\internship\\Day 3\\passage.txt','r') as file:
-        # loop to store the words in the empty string.
-        for words in file:
-            passage += words
+    inpuText= open('C:\\Users\\sugav\\OneDrive\\Desktop\\sayur\\internship\\Day 3\\passage.txt','r')
+    passage=inpuText.read()
 except TypeError as e:
     print(f"error: {e}")
 except Exception as e:
-    print(f"Error occured: {e}")
+    print(f"Error occured:(may be invalid file)")
 # Change the passage to lowercase to make the string case insensitive
 passage = passage.lower()
 
@@ -51,7 +49,7 @@ try:
         except TypeError as e:
             print(f"Error: {e}")
         except Exception as e:
-            print(f"An unexpected error occurred: {e}")
+            print(f"An unexpected error occurred: (may be indexing error)")
 
     # Output
     print("The answer is:", count)
@@ -61,7 +59,7 @@ try:
 except TypeError as e:
     print(f"Error: {e}")
 except Exception as e:
-    print(f"An unexpected error occured: {e}")
+    print(f"An unexpected error occured: (may be empty string)")
 
 
 """

@@ -11,10 +11,8 @@ fourLetterWordscount=[]
 try:
     # initialize a empty list to store the words.
     wortdsWithoutAinBetween=[]
-    with open('C:\\Users\\sugav\\OneDrive\\Desktop\\sayur\\internship\\Day 3\\passage.txt','r') as file:
-        # loop to store the words in the empty string.
-        for words in file:
-            passage += words
+    inputPassage=open('C:\\Users\\sugav\\OneDrive\\Desktop\\sayur\\internship\\Day 3\\passage.txt','r')
+    passage=inputPassage.read()
     passage=re.sub('[^a-zA-Z0-9]+'," ",passage)
 except TypeError as e:
     print(f"error: {e}")
