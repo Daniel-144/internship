@@ -27,24 +27,17 @@ finally:
     print("the above details are appended in the file.")
 
 
-
-
-
-
-
-
-
-
-
 """
-summary of 4 letter words
-shot : 1  The word is present in the passage only one time.
-went : 2 The word is present in the passage more than 1 time. 
-deer : 1  The word is present in the passage only one time.
-king : 3 The word is present in the passage more than 1 time. 
-next : 1  The word is present in the passage only one time.
-with : 1  The word is present in the passage only one time.
-wife : 1  The word is present in the passage only one time.
+OP
+SUMMARY OF 4 LETTER WORDS
+king:3
+went:2
+with:1
+wife:1
+shot:1
+next:1
+day.:1
+the above details are appended in the file.
 """
 
 
