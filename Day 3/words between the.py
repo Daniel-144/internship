@@ -16,7 +16,7 @@ try:
     passage=inpuText.read()
 except TypeError as e:
     print(f"error: {e}")
-except Exception as e:
+except:
     print(f"Error occured:(may be invalid file)")
 # Change the passage to lowercase to make the string case insensitive
 passage = passage.lower()
@@ -48,7 +48,7 @@ try:
                 wortdsWithoutAinBetween.append("The "+passage[i])
         except TypeError as e:
             print(f"Error: {e}")
-        except Exception as e:
+        except:
             print(f"An unexpected error occurred: (may be indexing error)")
 
     # Output
