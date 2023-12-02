@@ -30,10 +30,8 @@ try:
 
     # The first split will contain the word with only one "the," so we pop the word in index 0 and the last index
     # because there will be only one "the."
-    if passage[0]=="":
-       passage.pop(0)
-    if passage[len(passage)-1]=="":
-      passage.pop(len(passage) - 1)
+    passage.pop(0)
+    passage.pop(len(passage) - 1)
 
     count = 0
 
