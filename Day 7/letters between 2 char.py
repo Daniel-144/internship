@@ -27,12 +27,15 @@ def FindTheLettersBetween2Letters(inputString,alpha):
 # getting string from the user.
 string=input("enter the string:")
 # ascii value of letter "a".
-alph=97
+#alph=97
 string=string.lower()
-
-if(FindTheLettersBetween2Letters(string,chr(alph))==False):
-    if(FindTheLettersBetween2Letters(string,chr(alph+1))==False):
-        FindTheLettersBetween2Letters(string,chr(alph+2))
+for alph in range(97,101):
+    #if(FindTheLettersBetween2Letters(string,chr(alph))==False):
+    condition=FindTheLettersBetween2Letters(string,chr(alph))
+    if condition == True:
+        break
+        
+    
         
 
 """
